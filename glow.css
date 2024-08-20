@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.5s, transform 0.5s;
+    background-color: #3498db;
+}
+
+#toggleButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e74c3c;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#toggleText {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.container.active {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+#toggleButton.active {
+    background-color: #3498db;
+    transform: rotate(15deg);
+}
+
+#toggleText.active {
+    color: #dceaa6;
+}
